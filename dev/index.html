@@ -1,22 +1,36 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>&lt;my-element> Demo</title>
-    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
-    <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../my-element.js"></script>
-    <style>
-      p {
-        border: solid 1px blue;
-        padding: 8px;
-      }
-    </style>
-  </head>
-  <body>
-    <my-element>
-      <p>This is child content</p>
-    </my-element>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <title>&lt;my-element> Demo</title>
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <script src="../node_modules/lit/polyfill-support.js"></script>
+  <script type="module" src="../my-element.js"></script>
+  <script type="module" src="../src/components/button.js"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+
+    body {
+      margin: 0;
+      padding: 1em;
+
+    }
+
+    p {
+      border: solid 1px blue;
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- <my-element>
+    <p>This is child content</p>
+  </my-element> -->
+
+  <phoenix-button>Button</phoenix-button>
+</body>
+
 </html>
